@@ -11,6 +11,32 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <style>
+      /* Player photos (relative paths: same folder as this file) */
+      .photo {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        object-fit: cover;
+        object-position: center top;
+        flex: 0 0 auto;
+        background: #e9e9e9;
+      }
+      details.box summary {
+        padding-block: 16px;
+      }
+      @media (max-width: 560px) {
+        .photo {
+          width: 64px;
+          height: 64px;
+        }
+      }
+      .credits-note {
+        margin-top: 32px;
+        font-size: 15px;
+        opacity: 1;
+      }
+    </style>
   </head>
   <body>
     <header class="hero small">
@@ -20,11 +46,16 @@
       </div>
     </header>
     <main class="wrap">
+      <nav class="pager">
+        <a href="ballon-dor-2012.html">2012</a
+        ><a href="ballon-dor-2014.html">2014</a>
+      </nav>
       <h2 class="sec">Top 3</h2>
       <div class="stack">
         <details class="box r1">
           <summary>
             <span class="rk"><b>1</b><i>🥇</i></span>
+            <img class="photo" src="ronaldo.jpg" alt="Cristiano Ronaldo" loading="lazy" />
             <span class="who"><strong>Cristiano Ronaldo</strong><em>Portugal · Real Madrid</em></span><span class="chev" aria-hidden="true"></span>
           </summary>
           <ul class="honors">
@@ -45,6 +76,7 @@
         <details class="box r2">
           <summary>
             <span class="rk"><b>2</b><i>🥈</i></span>
+            <img class="photo" src="messi.jpg" alt="Lionel Messi" loading="lazy" />
             <span class="who"><strong>Lionel Messi</strong><em>Argentina · Barcelona</em></span><span class="tc">🏆 1</span><span class="chev" aria-hidden="true"></span>
           </summary>
           <ul class="honors">
@@ -68,6 +100,7 @@
         <details class="box r3">
           <summary>
             <span class="rk"><b>3</b><i>🥉</i></span>
+            <img class="photo" src="ribery.jpg" alt="Franck Ribéry" loading="lazy" />
             <span class="who"><strong>Franck Ribéry</strong><em>France · Bayern Munich</em></span><span class="tc">🏆 4</span><span class="chev" aria-hidden="true"></span>
           </summary>
           <ul class="honors">
@@ -149,10 +182,10 @@
           <span class="rk"><b>23</b></span><span class="who"><strong>Manuel Neuer</strong><em>Germany · Bayern Munich</em></span>
         </li>
       </ul>
-      <nav class="pager">
-        <a href="ballon-dor-2012.html">2012</a
-        ><a href="ballon-dor-2014.html">2014</a>
-      </nav>
+      <p class="credits-note">
+        Photos: Bryan Berlin / WikiPortraits (CC BY-SA 4.0).
+        <a href="credits.html">View all image credits</a>
+      </p>
     </main>
   </body>
 </html>
